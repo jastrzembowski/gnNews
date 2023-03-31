@@ -1,0 +1,41 @@
+.list-box {
+  background-color: rgba(248, 248, 248, 0.9);
+  margin: 5px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 15px 0px;
+  height: min-content;
+  flex-direction: column;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.5);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.5);
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.5);
+  button{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    span{
+      margin-right: 5px;
+    }
+    &:hover{
+        background-color: rgba(248, 248, 248, 0.9);
+        transition: all 0.2s;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .none{
+    display: none;
+  }
+  .list-box{
+    width: auto;
+  }
+}

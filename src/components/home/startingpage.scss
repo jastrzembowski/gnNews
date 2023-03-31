@@ -1,0 +1,80 @@
+.starting-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-image: url("../../images/stars.jpg");
+  .main-text{
+    z-index: 3;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(40px);
+    h1, h3{
+        margin: 3px;
+    }
+    button{
+        width: 300px;
+        align-self: center;
+        background-color: white;
+        height: 50px;
+        border: 0px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 900;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover{
+            background-color: rgba(169, 221, 222, 1);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+  }
+}
+
+.rotate-right {
+  animation: rotation 60s infinite linear;
+  width: 400px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width:600px){
+    .rotate-right{
+        top: -100px;
+        width: 200px;
+    }
+    .starting-page{
+        .main-text{
+            h1{
+                font-size: 22px;
+            }
+            h3{
+                font-size: 16px;
+            }
+            button{
+                width: 60%;
+                height: 40px;
+            }
+        }
+    }
+}

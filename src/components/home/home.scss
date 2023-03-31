@@ -1,0 +1,13 @@
+.home-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(169, 221, 222, 1);
+    padding: 10px 30px;
+    display: flex;
+}
+.home-darkMode{
+    background-color: rgba(86, 87, 87, 1);
+}
+@media (max-width: 900px){
+   .home-container{ padding: 10px 4px;}
+}
